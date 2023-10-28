@@ -1,0 +1,325 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.menu {
+    background: #d0bca0;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #6f684b;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s;
+}
+
+.menu a:hover {
+    border-bottom-color: #6f684b;
+}
+
+header {
+    padding: 30px;
+    background: #efefe9;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "profile description";
+}
+
+.leftSide {
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.name {
+    color: #6f684b;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.name span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.rightSide {
+    grid-area: description;
+    display: flex;
+    align-items: center;
+}
+
+.rightSide p {
+    color: #6f684b;
+    font-size: 18px;
+}
+
+.rightSide p span {
+    color: #6f684b;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "sidebar maininfo";
+    padding: 20px;
+    background: #d0bca0;
+}
+
+.sideBar {
+    grid-area: sidebar;
+    border: 3px solid #efefe9;
+    background: #efefe9;
+
+}
+
+.contact,
+.education {
+    margin-bottom: 30px;
+}
+
+.sideBar h4 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: #6f684b;
+    text-transform: uppercase;
+    padding: 0 15px;
+    width: 90%;
+    letter-spacing: 0.1em;
+}
+
+.mainInfo h4 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: #6f684b;
+    text-transform: uppercase;
+    padding: 0 15px;
+    width: 90%;
+    letter-spacing: 0.1em;
+    border: 3px solid #efefe9;
+}
+
+.contactIcon {
+    margin-right: 10px;
+}
+
+.conactInfo {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #6f684b;
+}
+
+.contactInfo a {
+    color: #000;
+    text-decoration: none;
+}
+
+.mainInfo {
+    grid-area: maininfo;
+    margin-left: 30px;
+}
+
+.conactInfo {
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 15px;
+    padding: 15px;
+    padding-left: 35px;
+    top: -30px;
+}
+
+.conactInfo li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+li .contactIcon {
+    color: #82614A;
+}
+
+li .info {
+    color: #524f4a;
+}
+
+.eduInfo {
+    color: #524f4a;
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    margin: 5px;
+    padding-left: 35px;
+    text-transform: uppercase;
+    flex-direction: column;
+    top: -30px;
+
+}
+
+.eduInfo span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.skill .skillsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skillsList li {
+    color: #524f4a;
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    margin: 5px;
+    padding: 7px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    top: -30px;
+}
+
+.intersitsList li {
+
+    color: #524f4a;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    margin: 5px;
+    padding: 7px;
+    text-transform: uppercase;
+    top: -30px;
+}
+
+.project a {
+    position: relative;
+    text-decoration: none;
+    color: #524f4a;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+
+.project a:after {
+    content: "";
+    position: absolute;
+    background-color: #efefe9;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.project a:hover:after {
+    width: 50px;
+}
+
+.project span {
+    position: relative;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #524f4a;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    bottom: -15px;
+}
+.certificate .certificateList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.certificateList li{
+    color: #524f4a;
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    margin: 5px;
+    padding: 7px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    top: -30px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #efefe9;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "profile"
+            "description";
+        text-align: center;
+    }
+
+    img {
+        margin: 20px auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sidebar"
+            "maininfo";
+    }
+
+    .mainInfo {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
